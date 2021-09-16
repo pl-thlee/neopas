@@ -2,6 +2,7 @@ import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { User } from 'src/auth/entities/user.entity';
 
 const config: TypeOrmModuleOptions = {
+  url: process.env.CLEARDB_DATABASE_URL,
   type: 'mysql',
   host: 'localhost',
   port: 3306,
