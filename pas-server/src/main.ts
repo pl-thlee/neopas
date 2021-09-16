@@ -27,7 +27,7 @@ async function bootstrap() {
     .addCookieAuth('connect.sid')
     .build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('', app, document);
+  SwaggerModule.setup('api', app, document);
 
   const port = process.env.PORT || 4000;
   await app.listen(port);
