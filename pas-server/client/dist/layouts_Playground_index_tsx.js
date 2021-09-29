@@ -1,6 +1,383 @@
 "use strict";
 (self["webpackChunkpas_client"] = self["webpackChunkpas_client"] || []).push([["layouts_Playground_index_tsx"],{
 
+/***/ "./components/Chat/ChatFeed/styles.tsx":
+/*!*********************************************!*\
+  !*** ./components/Chat/ChatFeed/styles.tsx ***!
+  \*********************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MessagesContainer": () => (/* binding */ MessagesContainer),
+/* harmony export */   "MessagesList": () => (/* binding */ MessagesList),
+/* harmony export */   "MessagesItem": () => (/* binding */ MessagesItem),
+/* harmony export */   "MyMessage": () => (/* binding */ MyMessage),
+/* harmony export */   "ReceivedMessage": () => (/* binding */ ReceivedMessage)
+/* harmony export */ });
+/* harmony import */ var _emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled/base */ "./node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+/* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.id);
+
+
+
+function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
+
+const MessagesContainer = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("div",  false ? 0 : {
+  target: "eax5anp4",
+  label: "MessagesContainer"
+})( false ? 0 : {
+  name: "vms2o3",
+  styles: "flex:1;min-height:100px;overflow:auto;border:none;border-radius:7px 7px 0 0",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXENoYXRGZWVkXFxzdHlsZXMudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUUyQyIsImZpbGUiOiJDOlxcVXNlcnNcXGNvcm9ja1xcRGVza3RvcFxcTmVvUEFTXFxwYXMtY2xpZW50XFxjb21wb25lbnRzXFxDaGF0XFxDaGF0RmVlZFxcc3R5bGVzLnRzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBzdHlsZWQgZnJvbSBcIkBlbW90aW9uL3N0eWxlZFwiO1xyXG5cclxuZXhwb3J0IGNvbnN0IE1lc3NhZ2VzQ29udGFpbmVyID0gc3R5bGVkLmRpdmBcclxuICAgIGZsZXg6IDE7XHJcbiAgICBtaW4taGVpZ2h0OiAxMDBweDtcclxuICAgIG92ZXJmbG93OiBhdXRvO1xyXG4gICAgYm9yZGVyOiBub25lO1xyXG4gICAgYm9yZGVyLXJhZGl1czogN3B4IDdweCAwIDA7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgTWVzc2FnZXNMaXN0ID0gc3R5bGVkLm9sYFxyXG4gICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xyXG4gICAgcGFkZGluZzogMDtcclxuXHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgTWVzc2FnZXNJdGVtID0gc3R5bGVkLmxpYFxyXG4gICAgbWFyZ2luOiA4cHg7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDhweDtcclxuICAgIHdvcmQtYnJlYWs6IGJyZWFrLXdvcmQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgTXlNZXNzYWdlID0gc3R5bGVkLmxpYFxyXG4gICAgd2lkdGg6IDU1JTtcclxuICAgIHBhZGRpbmc6IDEycHggOHB4O1xyXG4gICAgd29yZC1icmVhazogYnJlYWstd29yZDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDRweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigwLCAxMzIsIDI1NSk7XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuYDsgXHJcblxyXG5leHBvcnQgY29uc3QgUmVjZWl2ZWRNZXNzYWdlID0gc3R5bGVkLmxpYCBcclxuICAgIHdpZHRoOiA1NSU7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDhweDtcclxuICAgIHdvcmQtYnJlYWs6IGJyZWFrLXdvcmQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjM2Y0MDQyO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xyXG5gOyBcclxuIl19 */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+const MessagesList = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("ol",  false ? 0 : {
+  target: "eax5anp3",
+  label: "MessagesList"
+})( false ? 0 : {
+  name: "1qb0mst",
+  styles: "list-style-type:none;padding:0",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXENoYXRGZWVkXFxzdHlsZXMudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVVxQyIsImZpbGUiOiJDOlxcVXNlcnNcXGNvcm9ja1xcRGVza3RvcFxcTmVvUEFTXFxwYXMtY2xpZW50XFxjb21wb25lbnRzXFxDaGF0XFxDaGF0RmVlZFxcc3R5bGVzLnRzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBzdHlsZWQgZnJvbSBcIkBlbW90aW9uL3N0eWxlZFwiO1xyXG5cclxuZXhwb3J0IGNvbnN0IE1lc3NhZ2VzQ29udGFpbmVyID0gc3R5bGVkLmRpdmBcclxuICAgIGZsZXg6IDE7XHJcbiAgICBtaW4taGVpZ2h0OiAxMDBweDtcclxuICAgIG92ZXJmbG93OiBhdXRvO1xyXG4gICAgYm9yZGVyOiBub25lO1xyXG4gICAgYm9yZGVyLXJhZGl1czogN3B4IDdweCAwIDA7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgTWVzc2FnZXNMaXN0ID0gc3R5bGVkLm9sYFxyXG4gICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xyXG4gICAgcGFkZGluZzogMDtcclxuXHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgTWVzc2FnZXNJdGVtID0gc3R5bGVkLmxpYFxyXG4gICAgbWFyZ2luOiA4cHg7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDhweDtcclxuICAgIHdvcmQtYnJlYWs6IGJyZWFrLXdvcmQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgTXlNZXNzYWdlID0gc3R5bGVkLmxpYFxyXG4gICAgd2lkdGg6IDU1JTtcclxuICAgIHBhZGRpbmc6IDEycHggOHB4O1xyXG4gICAgd29yZC1icmVhazogYnJlYWstd29yZDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDRweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigwLCAxMzIsIDI1NSk7XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuYDsgXHJcblxyXG5leHBvcnQgY29uc3QgUmVjZWl2ZWRNZXNzYWdlID0gc3R5bGVkLmxpYCBcclxuICAgIHdpZHRoOiA1NSU7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDhweDtcclxuICAgIHdvcmQtYnJlYWs6IGJyZWFrLXdvcmQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjM2Y0MDQyO1xyXG4gICAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xyXG5gOyBcclxuIl19 */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+const MessagesItem = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("li",  false ? 0 : {
+  target: "eax5anp2",
+  label: "MessagesItem"
+})( false ? 0 : {
+  name: "jz41e1",
+  styles: "margin:8px;padding:12px 8px;word-break:break-word;border-radius:4px;color:white",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXENoYXRGZWVkXFxzdHlsZXMudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdCcUMiLCJmaWxlIjoiQzpcXFVzZXJzXFxjb3JvY2tcXERlc2t0b3BcXE5lb1BBU1xccGFzLWNsaWVudFxcY29tcG9uZW50c1xcQ2hhdFxcQ2hhdEZlZWRcXHN0eWxlcy50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc3R5bGVkIGZyb20gXCJAZW1vdGlvbi9zdHlsZWRcIjtcclxuXHJcbmV4cG9ydCBjb25zdCBNZXNzYWdlc0NvbnRhaW5lciA9IHN0eWxlZC5kaXZgXHJcbiAgICBmbGV4OiAxO1xyXG4gICAgbWluLWhlaWdodDogMTAwcHg7XHJcbiAgICBvdmVyZmxvdzogYXV0bztcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDdweCA3cHggMCAwO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IE1lc3NhZ2VzTGlzdCA9IHN0eWxlZC5vbGBcclxuICAgIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcclxuICAgIHBhZGRpbmc6IDA7XHJcblxyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IE1lc3NhZ2VzSXRlbSA9IHN0eWxlZC5saWBcclxuICAgIG1hcmdpbjogOHB4O1xyXG4gICAgcGFkZGluZzogMTJweCA4cHg7XHJcbiAgICB3b3JkLWJyZWFrOiBicmVhay13b3JkO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNHB4O1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IE15TWVzc2FnZSA9IHN0eWxlZC5saWBcclxuICAgIHdpZHRoOiA1NSU7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDhweDtcclxuICAgIHdvcmQtYnJlYWs6IGJyZWFrLXdvcmQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMCwgMTMyLCAyNTUpO1xyXG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbmA7IFxyXG5cclxuZXhwb3J0IGNvbnN0IFJlY2VpdmVkTWVzc2FnZSA9IHN0eWxlZC5saWAgXHJcbiAgICB3aWR0aDogNTUlO1xyXG4gICAgcGFkZGluZzogMTJweCA4cHg7XHJcbiAgICB3b3JkLWJyZWFrOiBicmVhay13b3JkO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzNmNDA0MjtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuYDsgXHJcbiJdfQ== */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+const MyMessage = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("li",  false ? 0 : {
+  target: "eax5anp1",
+  label: "MyMessage"
+})( false ? 0 : {
+  name: "umw3bj",
+  styles: "width:55%;padding:12px 8px;word-break:break-word;border-radius:4px;background-color:rgb(0, 132, 255);margin-left:auto",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXENoYXRGZWVkXFxzdHlsZXMudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXdCa0MiLCJmaWxlIjoiQzpcXFVzZXJzXFxjb3JvY2tcXERlc2t0b3BcXE5lb1BBU1xccGFzLWNsaWVudFxcY29tcG9uZW50c1xcQ2hhdFxcQ2hhdEZlZWRcXHN0eWxlcy50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc3R5bGVkIGZyb20gXCJAZW1vdGlvbi9zdHlsZWRcIjtcclxuXHJcbmV4cG9ydCBjb25zdCBNZXNzYWdlc0NvbnRhaW5lciA9IHN0eWxlZC5kaXZgXHJcbiAgICBmbGV4OiAxO1xyXG4gICAgbWluLWhlaWdodDogMTAwcHg7XHJcbiAgICBvdmVyZmxvdzogYXV0bztcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDdweCA3cHggMCAwO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IE1lc3NhZ2VzTGlzdCA9IHN0eWxlZC5vbGBcclxuICAgIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcclxuICAgIHBhZGRpbmc6IDA7XHJcblxyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IE1lc3NhZ2VzSXRlbSA9IHN0eWxlZC5saWBcclxuICAgIG1hcmdpbjogOHB4O1xyXG4gICAgcGFkZGluZzogMTJweCA4cHg7XHJcbiAgICB3b3JkLWJyZWFrOiBicmVhay13b3JkO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNHB4O1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IE15TWVzc2FnZSA9IHN0eWxlZC5saWBcclxuICAgIHdpZHRoOiA1NSU7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDhweDtcclxuICAgIHdvcmQtYnJlYWs6IGJyZWFrLXdvcmQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMCwgMTMyLCAyNTUpO1xyXG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbmA7IFxyXG5cclxuZXhwb3J0IGNvbnN0IFJlY2VpdmVkTWVzc2FnZSA9IHN0eWxlZC5saWAgXHJcbiAgICB3aWR0aDogNTUlO1xyXG4gICAgcGFkZGluZzogMTJweCA4cHg7XHJcbiAgICB3b3JkLWJyZWFrOiBicmVhay13b3JkO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzNmNDA0MjtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuYDsgXHJcbiJdfQ== */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+const ReceivedMessage = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("li",  false ? 0 : {
+  target: "eax5anp0",
+  label: "ReceivedMessage"
+})( false ? 0 : {
+  name: "zwvw01",
+  styles: "width:55%;padding:12px 8px;word-break:break-word;border-radius:4px;background-color:#3f4042;margin-right:auto",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXENoYXRGZWVkXFxzdHlsZXMudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWlDd0MiLCJmaWxlIjoiQzpcXFVzZXJzXFxjb3JvY2tcXERlc2t0b3BcXE5lb1BBU1xccGFzLWNsaWVudFxcY29tcG9uZW50c1xcQ2hhdFxcQ2hhdEZlZWRcXHN0eWxlcy50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc3R5bGVkIGZyb20gXCJAZW1vdGlvbi9zdHlsZWRcIjtcclxuXHJcbmV4cG9ydCBjb25zdCBNZXNzYWdlc0NvbnRhaW5lciA9IHN0eWxlZC5kaXZgXHJcbiAgICBmbGV4OiAxO1xyXG4gICAgbWluLWhlaWdodDogMTAwcHg7XHJcbiAgICBvdmVyZmxvdzogYXV0bztcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDdweCA3cHggMCAwO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IE1lc3NhZ2VzTGlzdCA9IHN0eWxlZC5vbGBcclxuICAgIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcclxuICAgIHBhZGRpbmc6IDA7XHJcblxyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IE1lc3NhZ2VzSXRlbSA9IHN0eWxlZC5saWBcclxuICAgIG1hcmdpbjogOHB4O1xyXG4gICAgcGFkZGluZzogMTJweCA4cHg7XHJcbiAgICB3b3JkLWJyZWFrOiBicmVhay13b3JkO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNHB4O1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IE15TWVzc2FnZSA9IHN0eWxlZC5saWBcclxuICAgIHdpZHRoOiA1NSU7XHJcbiAgICBwYWRkaW5nOiAxMnB4IDhweDtcclxuICAgIHdvcmQtYnJlYWs6IGJyZWFrLXdvcmQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMCwgMTMyLCAyNTUpO1xyXG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbmA7IFxyXG5cclxuZXhwb3J0IGNvbnN0IFJlY2VpdmVkTWVzc2FnZSA9IHN0eWxlZC5saWAgXHJcbiAgICB3aWR0aDogNTUlO1xyXG4gICAgcGFkZGluZzogMTJweCA4cHg7XHJcbiAgICB3b3JkLWJyZWFrOiBicmVhay13b3JkO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzNmNDA0MjtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuYDsgXHJcbiJdfQ== */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.id);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.id].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+
+/***/ }),
+
+/***/ "./components/Chat/ChatHeader/Index.tsx":
+/*!**********************************************!*\
+  !*** ./components/Chat/ChatHeader/Index.tsx ***!
+  \**********************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles */ "./components/Chat/ChatHeader/styles.tsx");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+/* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.id);
+
+var _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+const ChatHeader = ({
+  match
+}) => {
+  _s();
+
+  const {
+    roomID
+  } = match.params; // Gets roomId from URL
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    fetch(`http://localhost:3000/playgrounds/${roomID}`);
+  }, [roomID]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_1__.ChatHeaderWrapper, null, roomID);
+};
+
+_s(ChatHeader, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+
+_c = ChatHeader;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_c2 = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.withRouter)(ChatHeader));
+
+var _c, _c2;
+
+__webpack_require__.$Refresh$.register(_c, "ChatHeader");
+__webpack_require__.$Refresh$.register(_c2, "%default%");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.id);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.id].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+
+/***/ }),
+
+/***/ "./components/Chat/ChatHeader/styles.tsx":
+/*!***********************************************!*\
+  !*** ./components/Chat/ChatHeader/styles.tsx ***!
+  \***********************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ChatHeaderWrapper": () => (/* binding */ ChatHeaderWrapper)
+/* harmony export */ });
+/* harmony import */ var _emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled/base */ "./node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+/* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.id);
+
+
+
+function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
+
+const ChatHeaderWrapper = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("div",  false ? 0 : {
+  target: "egacaca0",
+  label: "ChatHeaderWrapper"
+})( false ? 0 : {
+  name: "10ojr4g",
+  styles: "display:flex;align-items:center;padding:1rem;background:#EF6264;font-weight:bold",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXENoYXRIZWFkZXJcXHN0eWxlcy50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRTJDIiwiZmlsZSI6IkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXENoYXRIZWFkZXJcXHN0eWxlcy50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc3R5bGVkIGZyb20gJ0BlbW90aW9uL3N0eWxlZCc7XHJcblxyXG5leHBvcnQgY29uc3QgQ2hhdEhlYWRlcldyYXBwZXIgPSBzdHlsZWQuZGl2YFxyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBwYWRkaW5nOiAxcmVtO1xyXG4gIGJhY2tncm91bmQ6ICNFRjYyNjQ7XHJcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbmA7Il19 */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.id);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.id].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+
+/***/ }),
+
 /***/ "./components/Chat/index.tsx":
 /*!***********************************!*\
   !*** ./components/Chat/index.tsx ***!
@@ -12,6 +389,191 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _hooks_useChat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @hooks/useChat */ "./hooks/useChat.ts");
+/* harmony import */ var _components_Chat_ChatHeader_Index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Chat/ChatHeader/Index */ "./components/Chat/ChatHeader/Index.tsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_icons_bi__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-icons/bi */ "./node_modules/react-icons/bi/index.esm.js");
+/* harmony import */ var react_icons_gr__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-icons/gr */ "./node_modules/react-icons/gr/index.esm.js");
+/* harmony import */ var react_icons_lib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/lib */ "./node_modules/react-icons/lib/esm/index.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles */ "./components/Chat/styles.tsx");
+/* harmony import */ var _components_Chat_ChatFeed_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @components/Chat/ChatFeed/styles */ "./components/Chat/ChatFeed/styles.tsx");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+/* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.id);
+
+var _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+ //input import
+
+
+
+
+ //feed import
+
+
+
+const Chat = ({
+  match
+}) => {
+  _s();
+
+  const {
+    roomID
+  } = match.params; // Gets roomId from URL
+
+  const {
+    messages,
+    sendMessage
+  } = (0,_hooks_useChat__WEBPACK_IMPORTED_MODULE_1__.default)(roomID);
+  const [newMessage, setNewMessage] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''); // Message to be sent
+
+  const handleNewMessageChange = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(e => {
+    console.log('[handleNewMessageChange]', e.target.value);
+    setNewMessage(e.target.value);
+  }, [newMessage]);
+  const handleSendMessage = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(e => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      setNewMessage('');
+      console.log('handleSendMessage', newMessage);
+      sendMessage(newMessage);
+    }
+  }, [newMessage]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      flex: '1',
+      height: 'calc(100vh - 4rem)'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Chat_ChatHeader_Index__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "#chatFeed",
+    style: {
+      display: 'flex',
+      flex: 0.8,
+      padding: '1rem'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Chat_ChatFeed_styles__WEBPACK_IMPORTED_MODULE_5__.MessagesContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Chat_ChatFeed_styles__WEBPACK_IMPORTED_MODULE_5__.MessagesList, null, messages.map((message, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Chat_ChatFeed_styles__WEBPACK_IMPORTED_MODULE_5__.MessagesItem, {
+    key: i
+  }, message.ownedByCurrentUser ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Chat_ChatFeed_styles__WEBPACK_IMPORTED_MODULE_5__.MyMessage, null, "Me : ", message.body) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Chat_ChatFeed_styles__WEBPACK_IMPORTED_MODULE_5__.ReceivedMessage, null, "You : ", message.body)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_4__.MessageBox, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_4__.ChatArea, {
+    placeholder: "\uBA54\uC2DC\uC9C0\uB97C \uC785\uB825\uD558\uC138\uC694",
+    onChange: handleNewMessageChange,
+    value: newMessage,
+    onKeyPress: handleSendMessage
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_4__.ChatToolbar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_lib__WEBPACK_IMPORTED_MODULE_3__.IconContext.Provider, {
+    value: {
+      size: '1.5rem',
+      color: 'black'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_gr__WEBPACK_IMPORTED_MODULE_6__.GrEmoji, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_bi__WEBPACK_IMPORTED_MODULE_7__.BiSend, null)))));
+};
+
+_s(Chat, "huOQ9ZjrKYo5vWjnYKLH2SjvU9Q=", false, function () {
+  return [_hooks_useChat__WEBPACK_IMPORTED_MODULE_1__.default];
+});
+
+_c = Chat;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_c2 = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_8__.withRouter)(Chat));
+
+var _c, _c2;
+
+__webpack_require__.$Refresh$.register(_c, "Chat");
+__webpack_require__.$Refresh$.register(_c2, "%default%");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.id);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.id].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+
+/***/ }),
+
+/***/ "./components/Chat/styles.tsx":
+/*!************************************!*\
+  !*** ./components/Chat/styles.tsx ***!
+  \************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MessageBox": () => (/* binding */ MessageBox),
+/* harmony export */   "ChatArea": () => (/* binding */ ChatArea),
+/* harmony export */   "ChatToolbar": () => (/* binding */ ChatToolbar),
+/* harmony export */   "SendButton": () => (/* binding */ SendButton)
+/* harmony export */ });
+/* harmony import */ var _emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled/base */ "./node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 /* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
@@ -19,29 +581,39 @@ __webpack_require__.$Refresh$.setup(module.id);
 
 
 
-const Chat = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    style: {
-      display: 'flex',
-      flex: '0.3',
-      background: 'lightgray',
-      height: 'calc(100vh - 4rem)'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "https://via.placeholder.com/194.png?text=Chat%20component",
-    style: {
-      width: '100%',
-      height: 'calc(100vh - 4rem)'
-    }
-  }));
-};
+function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
-_c = Chat;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Chat);
-
-var _c;
-
-__webpack_require__.$Refresh$.register(_c, "Chat");
+const MessageBox = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("div",  false ? 0 : {
+  target: "e5moqeo3",
+  label: "MessageBox"
+})( false ? 0 : {
+  name: "dcbc6w",
+  styles: "display:flex;flex-direction:column;flex:0.2",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXHN0eWxlcy50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRW9DIiwiZmlsZSI6IkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXHN0eWxlcy50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc3R5bGVkIGZyb20gJ0BlbW90aW9uL3N0eWxlZCc7XHJcblxyXG5leHBvcnQgY29uc3QgTWVzc2FnZUJveCA9IHN0eWxlZC5kaXZgXHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGZsZXg6IDAuMjtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBDaGF0QXJlYSA9IHN0eWxlZC50ZXh0YXJlYWBcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IGF1dG87XHJcbiAgcGFkZGluZzogMXJlbTtcclxuICByZXNpemU6IG5vbmUgIWltcG9ydGFudDtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IENoYXRUb29sYmFyID0gc3R5bGVkLmRpdmBcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIHBhZGRpbmc6IDFyZW07XHJcbiAgYmFja2dyb3VuZDogcmdiKDI0OCwgMjQ4LCAyNDgpO1xyXG4gIGhlaWdodDogM3JlbTtcclxuICBib3JkZXItdG9wOiAxcHggc29saWQgcmdiKDIyMSwgMjIxLCAyMjEpO1xyXG4gIGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDRweDtcclxuICBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogNHB4O1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFNlbmRCdXR0b24gPSBzdHlsZWQuYnV0dG9uYGA7Il19 */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+const ChatArea = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("textarea",  false ? 0 : {
+  target: "e5moqeo2",
+  label: "ChatArea"
+})( false ? 0 : {
+  name: "14pcyeu",
+  styles: "width:100%;height:auto;padding:1rem;resize:none!important;overflow:hidden",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXHN0eWxlcy50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBUXVDIiwiZmlsZSI6IkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXHN0eWxlcy50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc3R5bGVkIGZyb20gJ0BlbW90aW9uL3N0eWxlZCc7XHJcblxyXG5leHBvcnQgY29uc3QgTWVzc2FnZUJveCA9IHN0eWxlZC5kaXZgXHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGZsZXg6IDAuMjtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBDaGF0QXJlYSA9IHN0eWxlZC50ZXh0YXJlYWBcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IGF1dG87XHJcbiAgcGFkZGluZzogMXJlbTtcclxuICByZXNpemU6IG5vbmUgIWltcG9ydGFudDtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IENoYXRUb29sYmFyID0gc3R5bGVkLmRpdmBcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIHBhZGRpbmc6IDFyZW07XHJcbiAgYmFja2dyb3VuZDogcmdiKDI0OCwgMjQ4LCAyNDgpO1xyXG4gIGhlaWdodDogM3JlbTtcclxuICBib3JkZXItdG9wOiAxcHggc29saWQgcmdiKDIyMSwgMjIxLCAyMjEpO1xyXG4gIGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDRweDtcclxuICBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogNHB4O1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFNlbmRCdXR0b24gPSBzdHlsZWQuYnV0dG9uYGA7Il19 */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+const ChatToolbar = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("div",  false ? 0 : {
+  target: "e5moqeo1",
+  label: "ChatToolbar"
+})( false ? 0 : {
+  name: "1hb62sl",
+  styles: "display:flex;justify-content:space-between;align-items:center;padding:1rem;background:rgb(248, 248, 248);height:3rem;border-top:1px solid rgb(221, 221, 221);border-bottom-left-radius:4px;border-bottom-right-radius:4px",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXHN0eWxlcy50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZ0JxQyIsImZpbGUiOiJDOlxcVXNlcnNcXGNvcm9ja1xcRGVza3RvcFxcTmVvUEFTXFxwYXMtY2xpZW50XFxjb21wb25lbnRzXFxDaGF0XFxzdHlsZXMudHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xyXG5cclxuZXhwb3J0IGNvbnN0IE1lc3NhZ2VCb3ggPSBzdHlsZWQuZGl2YFxyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBmbGV4OiAwLjI7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgQ2hhdEFyZWEgPSBzdHlsZWQudGV4dGFyZWFgXHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiBhdXRvO1xyXG4gIHBhZGRpbmc6IDFyZW07XHJcbiAgcmVzaXplOiBub25lICFpbXBvcnRhbnQ7XHJcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBDaGF0VG9vbGJhciA9IHN0eWxlZC5kaXZgXHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBwYWRkaW5nOiAxcmVtO1xyXG4gIGJhY2tncm91bmQ6IHJnYigyNDgsIDI0OCwgMjQ4KTtcclxuICBoZWlnaHQ6IDNyZW07XHJcbiAgYm9yZGVyLXRvcDogMXB4IHNvbGlkIHJnYigyMjEsIDIyMSwgMjIxKTtcclxuICBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiA0cHg7XHJcbiAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDRweDtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBTZW5kQnV0dG9uID0gc3R5bGVkLmJ1dHRvbmBgOyJdfQ== */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+const SendButton = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("button",  false ? 0 : {
+  target: "e5moqeo0",
+  label: "SendButton"
+})( false ? 0 : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXENoYXRcXHN0eWxlcy50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBNEJ1QyIsImZpbGUiOiJDOlxcVXNlcnNcXGNvcm9ja1xcRGVza3RvcFxcTmVvUEFTXFxwYXMtY2xpZW50XFxjb21wb25lbnRzXFxDaGF0XFxzdHlsZXMudHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xyXG5cclxuZXhwb3J0IGNvbnN0IE1lc3NhZ2VCb3ggPSBzdHlsZWQuZGl2YFxyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBmbGV4OiAwLjI7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgQ2hhdEFyZWEgPSBzdHlsZWQudGV4dGFyZWFgXHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiBhdXRvO1xyXG4gIHBhZGRpbmc6IDFyZW07XHJcbiAgcmVzaXplOiBub25lICFpbXBvcnRhbnQ7XHJcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBDaGF0VG9vbGJhciA9IHN0eWxlZC5kaXZgXHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBwYWRkaW5nOiAxcmVtO1xyXG4gIGJhY2tncm91bmQ6IHJnYigyNDgsIDI0OCwgMjQ4KTtcclxuICBoZWlnaHQ6IDNyZW07XHJcbiAgYm9yZGVyLXRvcDogMXB4IHNvbGlkIHJnYigyMjEsIDIyMSwgMjIxKTtcclxuICBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiA0cHg7XHJcbiAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDRweDtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBTZW5kQnV0dG9uID0gc3R5bGVkLmJ1dHRvbmBgOyJdfQ== */");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.id);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
@@ -644,406 +1216,6 @@ if (true) {
 
 /***/ }),
 
-/***/ "./components/Header/index.tsx":
-/*!*************************************!*\
-  !*** ./components/Header/index.tsx ***!
-  \*************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles */ "./components/Header/styles.tsx");
-/* harmony import */ var gravatar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gravatar */ "./node_modules/gravatar/index.js");
-/* harmony import */ var gravatar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gravatar__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jwt-decode */ "./node_modules/jwt-decode/build/jwt-decode.esm.js");
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-/* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-__webpack_require__.$Refresh$.setup(module.id);
-
-
-
-
-
-
-// interface Props {
-//   user: IUser;
-// }
-const Header = () => {
-  const token = localStorage.getItem('user');
-  const currentUserId = (0,jwt_decode__WEBPACK_IMPORTED_MODULE_3__.default)(token).userId;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_1__.HeaderWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_1__.Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "logo"
-  }, "NeoPAS (Programming Assistant System)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_1__.ProfileImg, {
-    src: gravatar__WEBPACK_IMPORTED_MODULE_2___default().url(currentUserId, {
-      size: '28px',
-      default: 'retro'
-    })
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_1__.Spacer, null));
-};
-
-_c = Header;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
-
-var _c;
-
-__webpack_require__.$Refresh$.register(_c, "Header");
-
-const currentExports = __react_refresh_utils__.getModuleExports(module.id);
-__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
-
-if (true) {
-  const isHotUpdate = !!module.hot.data;
-  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
-
-  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
-    module.hot.dispose(
-      /**
-       * A callback to performs a full refresh if React has unrecoverable errors,
-       * and also caches the to-be-disposed module.
-       * @param {*} data A hot module data object from Webpack HMR.
-       * @returns {void}
-       */
-      function hotDisposeCallback(data) {
-        // We have to mutate the data object to get data registered and cached
-        data.prevExports = currentExports;
-      }
-    );
-    module.hot.accept(
-      /**
-       * An error handler to allow self-recovering behaviours.
-       * @param {Error} error An error occurred during evaluation of a module.
-       * @returns {void}
-       */
-      function hotErrorHandler(error) {
-        if (
-          typeof __react_refresh_error_overlay__ !== 'undefined' &&
-          __react_refresh_error_overlay__
-        ) {
-          __react_refresh_error_overlay__.handleRuntimeError(error);
-        }
-
-        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
-          if (window.onHotAcceptError) {
-            window.onHotAcceptError(error.message);
-          }
-        }
-
-        __webpack_require__.c[module.id].hot.accept(hotErrorHandler);
-      }
-    );
-
-    if (isHotUpdate) {
-      if (
-        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
-        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
-      ) {
-        module.hot.invalidate();
-      } else {
-        __react_refresh_utils__.enqueueUpdate(
-          /**
-           * A function to dismiss the error overlay after performing React refresh.
-           * @returns {void}
-           */
-          function updateCallback() {
-            if (
-              typeof __react_refresh_error_overlay__ !== 'undefined' &&
-              __react_refresh_error_overlay__
-            ) {
-              __react_refresh_error_overlay__.clearRuntimeErrors();
-            }
-          }
-        );
-      }
-    }
-  } else {
-    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
-      module.hot.invalidate();
-    }
-  }
-}
-
-/***/ }),
-
-/***/ "./components/Header/styles.tsx":
-/*!**************************************!*\
-  !*** ./components/Header/styles.tsx ***!
-  \**************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "HeaderWrapper": () => (/* binding */ HeaderWrapper),
-/* harmony export */   "Wrapper": () => (/* binding */ Wrapper),
-/* harmony export */   "Spacer": () => (/* binding */ Spacer),
-/* harmony export */   "UserInfo": () => (/* binding */ UserInfo),
-/* harmony export */   "ProfileImg": () => (/* binding */ ProfileImg)
-/* harmony export */ });
-/* harmony import */ var _emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled/base */ "./node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js");
-/* harmony import */ var _components_Responsive__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Responsive */ "./components/Responsive/index.tsx");
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-/* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-__webpack_require__.$Refresh$.setup(module.id);
-
-
-
-function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
-
-
-const HeaderWrapper = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("header",  false ? 0 : {
-  target: "e1necq0t4",
-  label: "HeaderWrapper"
-})( false ? 0 : {
-  name: "q3ckdp",
-  styles: "position:fixed;width:100%;box-shadow:0px 2px 4px rgba(0, 0, 0, 0.08);border-bottom:1px rgb(68, 76, 86) solid;z-index:628",
-  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXEhlYWRlclxcc3R5bGVzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHK0QiLCJmaWxlIjoiQzpcXFVzZXJzXFxjb3JvY2tcXERlc2t0b3BcXE5lb1BBU1xccGFzLWNsaWVudFxcY29tcG9uZW50c1xcSGVhZGVyXFxzdHlsZXMudHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlc3BvbnNpdmUgZnJvbSAnQGNvbXBvbmVudHMvUmVzcG9uc2l2ZSc7XHJcbmltcG9ydCBzdHlsZWQsIHsgU3R5bGVkQ29tcG9uZW50IH0gZnJvbSAnQGVtb3Rpb24vc3R5bGVkJztcclxuXHJcbmV4cG9ydCBjb25zdCBIZWFkZXJXcmFwcGVyOiBTdHlsZWRDb21wb25lbnQ8e30+ID0gc3R5bGVkLmhlYWRlcmBcclxuICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYm94LXNoYWRvdzogMHB4IDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjA4KTtcclxuICBib3JkZXItYm90dG9tOiAxcHggcmdiKDY4LCA3NiwgODYpIHNvbGlkO1xyXG4gIHotaW5kZXg6IDYyODtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBXcmFwcGVyID0gc3R5bGVkKFJlc3BvbnNpdmUpYFxyXG4gIGhlaWdodDogNHJlbTtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG5cclxuICAubG9nbyB7XHJcbiAgICBmb250LXNpemU6IDEuNXJlbTtcclxuICAgIGxldHRlci1zcGFjaW5nOiAwLjVweDtcclxuICB9XHJcblxyXG4gIC5yaWdodCB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICB9XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgU3BhY2VyID0gc3R5bGVkLmRpdmBcclxuICBoZWlnaHQ6IDRyZW07XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgVXNlckluZm8gPSBzdHlsZWQuZGl2YFxyXG4gIGZvbnQtd2VpZ2h0OiA4MDA7XHJcbiAgbWFyZ2luLXJpZ2h0OiAxcmVtO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFByb2ZpbGVJbWcgPSBzdHlsZWQuaW1nYFxyXG4gIHdpZHRoOiAyLjVyZW07XHJcbiAgaGVpZ2h0OiAyLjVyZW07XHJcbiAgYm9yZGVyLXJhZGl1czogNTAlICFpbXBvcnRhbnQ7XHJcbiAgYm94LXNoYWRvdzogMCAxcHggM3B4IHJnYmEoMCwgMCwgMCwgMC4xMiksIDAgMXB4IDJweCByZ2JhKDAsIDAsIDAsIDAuMjQpO1xyXG4gIHRyYW5zaXRpb246IGFsbCAwLjNzIGN1YmljLWJlemllcigwLjI1LCAwLjgsIDAuMjUsIDEpO1xyXG5cclxuICAmOmhvdmVyIHtcclxuICAgIGJveC1zaGFkb3c6IDAgMTRweCAyOHB4IHJnYmEoMCwgMCwgMCwgMC4yNSksIDAgMTBweCAxMHB4IHJnYmEoMCwgMCwgMCwgMC4yMik7XHJcbiAgfVxyXG5gO1xyXG4iXX0= */",
-  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
-});
-const Wrapper = /*#__PURE__*/(0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)(_components_Responsive__WEBPACK_IMPORTED_MODULE_1__.default,  false ? 0 : {
-  target: "e1necq0t3",
-  label: "Wrapper"
-})( false ? 0 : {
-  name: "voq6rk",
-  styles: "height:4rem;display:flex;align-items:center;justify-content:space-between;.logo{font-size:1.5rem;letter-spacing:0.5px;}.right{display:flex;align-items:center;}",
-  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXEhlYWRlclxcc3R5bGVzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFXeUMiLCJmaWxlIjoiQzpcXFVzZXJzXFxjb3JvY2tcXERlc2t0b3BcXE5lb1BBU1xccGFzLWNsaWVudFxcY29tcG9uZW50c1xcSGVhZGVyXFxzdHlsZXMudHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlc3BvbnNpdmUgZnJvbSAnQGNvbXBvbmVudHMvUmVzcG9uc2l2ZSc7XHJcbmltcG9ydCBzdHlsZWQsIHsgU3R5bGVkQ29tcG9uZW50IH0gZnJvbSAnQGVtb3Rpb24vc3R5bGVkJztcclxuXHJcbmV4cG9ydCBjb25zdCBIZWFkZXJXcmFwcGVyOiBTdHlsZWRDb21wb25lbnQ8e30+ID0gc3R5bGVkLmhlYWRlcmBcclxuICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYm94LXNoYWRvdzogMHB4IDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjA4KTtcclxuICBib3JkZXItYm90dG9tOiAxcHggcmdiKDY4LCA3NiwgODYpIHNvbGlkO1xyXG4gIHotaW5kZXg6IDYyODtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBXcmFwcGVyID0gc3R5bGVkKFJlc3BvbnNpdmUpYFxyXG4gIGhlaWdodDogNHJlbTtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG5cclxuICAubG9nbyB7XHJcbiAgICBmb250LXNpemU6IDEuNXJlbTtcclxuICAgIGxldHRlci1zcGFjaW5nOiAwLjVweDtcclxuICB9XHJcblxyXG4gIC5yaWdodCB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICB9XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgU3BhY2VyID0gc3R5bGVkLmRpdmBcclxuICBoZWlnaHQ6IDRyZW07XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgVXNlckluZm8gPSBzdHlsZWQuZGl2YFxyXG4gIGZvbnQtd2VpZ2h0OiA4MDA7XHJcbiAgbWFyZ2luLXJpZ2h0OiAxcmVtO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFByb2ZpbGVJbWcgPSBzdHlsZWQuaW1nYFxyXG4gIHdpZHRoOiAyLjVyZW07XHJcbiAgaGVpZ2h0OiAyLjVyZW07XHJcbiAgYm9yZGVyLXJhZGl1czogNTAlICFpbXBvcnRhbnQ7XHJcbiAgYm94LXNoYWRvdzogMCAxcHggM3B4IHJnYmEoMCwgMCwgMCwgMC4xMiksIDAgMXB4IDJweCByZ2JhKDAsIDAsIDAsIDAuMjQpO1xyXG4gIHRyYW5zaXRpb246IGFsbCAwLjNzIGN1YmljLWJlemllcigwLjI1LCAwLjgsIDAuMjUsIDEpO1xyXG5cclxuICAmOmhvdmVyIHtcclxuICAgIGJveC1zaGFkb3c6IDAgMTRweCAyOHB4IHJnYmEoMCwgMCwgMCwgMC4yNSksIDAgMTBweCAxMHB4IHJnYmEoMCwgMCwgMCwgMC4yMik7XHJcbiAgfVxyXG5gO1xyXG4iXX0= */",
-  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
-});
-const Spacer = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("div",  false ? 0 : {
-  target: "e1necq0t2",
-  label: "Spacer"
-})( false ? 0 : {
-  name: "p13mol",
-  styles: "height:4rem",
-  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXEhlYWRlclxcc3R5bGVzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE0QmdDIiwiZmlsZSI6IkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXEhlYWRlclxcc3R5bGVzLnRzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZXNwb25zaXZlIGZyb20gJ0Bjb21wb25lbnRzL1Jlc3BvbnNpdmUnO1xyXG5pbXBvcnQgc3R5bGVkLCB7IFN0eWxlZENvbXBvbmVudCB9IGZyb20gJ0BlbW90aW9uL3N0eWxlZCc7XHJcblxyXG5leHBvcnQgY29uc3QgSGVhZGVyV3JhcHBlcjogU3R5bGVkQ29tcG9uZW50PHt9PiA9IHN0eWxlZC5oZWFkZXJgXHJcbiAgcG9zaXRpb246IGZpeGVkO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGJveC1zaGFkb3c6IDBweCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4wOCk7XHJcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHJnYig2OCwgNzYsIDg2KSBzb2xpZDtcclxuICB6LWluZGV4OiA2Mjg7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgV3JhcHBlciA9IHN0eWxlZChSZXNwb25zaXZlKWBcclxuICBoZWlnaHQ6IDRyZW07XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuXHJcbiAgLmxvZ28ge1xyXG4gICAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgICBsZXR0ZXItc3BhY2luZzogMC41cHg7XHJcbiAgfVxyXG5cclxuICAucmlnaHQge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgfVxyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFNwYWNlciA9IHN0eWxlZC5kaXZgXHJcbiAgaGVpZ2h0OiA0cmVtO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFVzZXJJbmZvID0gc3R5bGVkLmRpdmBcclxuICBmb250LXdlaWdodDogODAwO1xyXG4gIG1hcmdpbi1yaWdodDogMXJlbTtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBQcm9maWxlSW1nID0gc3R5bGVkLmltZ2BcclxuICB3aWR0aDogMi41cmVtO1xyXG4gIGhlaWdodDogMi41cmVtO1xyXG4gIGJvcmRlci1yYWRpdXM6IDUwJSAhaW1wb3J0YW50O1xyXG4gIGJveC1zaGFkb3c6IDAgMXB4IDNweCByZ2JhKDAsIDAsIDAsIDAuMTIpLCAwIDFweCAycHggcmdiYSgwLCAwLCAwLCAwLjI0KTtcclxuICB0cmFuc2l0aW9uOiBhbGwgMC4zcyBjdWJpYy1iZXppZXIoMC4yNSwgMC44LCAwLjI1LCAxKTtcclxuXHJcbiAgJjpob3ZlciB7XHJcbiAgICBib3gtc2hhZG93OiAwIDE0cHggMjhweCByZ2JhKDAsIDAsIDAsIDAuMjUpLCAwIDEwcHggMTBweCByZ2JhKDAsIDAsIDAsIDAuMjIpO1xyXG4gIH1cclxuYDtcclxuIl19 */",
-  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
-});
-const UserInfo = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("div",  false ? 0 : {
-  target: "e1necq0t1",
-  label: "UserInfo"
-})( false ? 0 : {
-  name: "wqzysi",
-  styles: "font-weight:800;margin-right:1rem",
-  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXEhlYWRlclxcc3R5bGVzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFnQ2tDIiwiZmlsZSI6IkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXEhlYWRlclxcc3R5bGVzLnRzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZXNwb25zaXZlIGZyb20gJ0Bjb21wb25lbnRzL1Jlc3BvbnNpdmUnO1xyXG5pbXBvcnQgc3R5bGVkLCB7IFN0eWxlZENvbXBvbmVudCB9IGZyb20gJ0BlbW90aW9uL3N0eWxlZCc7XHJcblxyXG5leHBvcnQgY29uc3QgSGVhZGVyV3JhcHBlcjogU3R5bGVkQ29tcG9uZW50PHt9PiA9IHN0eWxlZC5oZWFkZXJgXHJcbiAgcG9zaXRpb246IGZpeGVkO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGJveC1zaGFkb3c6IDBweCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4wOCk7XHJcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHJnYig2OCwgNzYsIDg2KSBzb2xpZDtcclxuICB6LWluZGV4OiA2Mjg7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgV3JhcHBlciA9IHN0eWxlZChSZXNwb25zaXZlKWBcclxuICBoZWlnaHQ6IDRyZW07XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuXHJcbiAgLmxvZ28ge1xyXG4gICAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgICBsZXR0ZXItc3BhY2luZzogMC41cHg7XHJcbiAgfVxyXG5cclxuICAucmlnaHQge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgfVxyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFNwYWNlciA9IHN0eWxlZC5kaXZgXHJcbiAgaGVpZ2h0OiA0cmVtO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFVzZXJJbmZvID0gc3R5bGVkLmRpdmBcclxuICBmb250LXdlaWdodDogODAwO1xyXG4gIG1hcmdpbi1yaWdodDogMXJlbTtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBQcm9maWxlSW1nID0gc3R5bGVkLmltZ2BcclxuICB3aWR0aDogMi41cmVtO1xyXG4gIGhlaWdodDogMi41cmVtO1xyXG4gIGJvcmRlci1yYWRpdXM6IDUwJSAhaW1wb3J0YW50O1xyXG4gIGJveC1zaGFkb3c6IDAgMXB4IDNweCByZ2JhKDAsIDAsIDAsIDAuMTIpLCAwIDFweCAycHggcmdiYSgwLCAwLCAwLCAwLjI0KTtcclxuICB0cmFuc2l0aW9uOiBhbGwgMC4zcyBjdWJpYy1iZXppZXIoMC4yNSwgMC44LCAwLjI1LCAxKTtcclxuXHJcbiAgJjpob3ZlciB7XHJcbiAgICBib3gtc2hhZG93OiAwIDE0cHggMjhweCByZ2JhKDAsIDAsIDAsIDAuMjUpLCAwIDEwcHggMTBweCByZ2JhKDAsIDAsIDAsIDAuMjIpO1xyXG4gIH1cclxuYDtcclxuIl19 */",
-  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
-});
-const ProfileImg = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("img",  false ? 0 : {
-  target: "e1necq0t0",
-  label: "ProfileImg"
-})( false ? 0 : {
-  name: "aqvqka",
-  styles: "width:2.5rem;height:2.5rem;border-radius:50%!important;box-shadow:0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24);transition:all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);&:hover{box-shadow:0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);}",
-  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXEhlYWRlclxcc3R5bGVzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFxQ29DIiwiZmlsZSI6IkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXEhlYWRlclxcc3R5bGVzLnRzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZXNwb25zaXZlIGZyb20gJ0Bjb21wb25lbnRzL1Jlc3BvbnNpdmUnO1xyXG5pbXBvcnQgc3R5bGVkLCB7IFN0eWxlZENvbXBvbmVudCB9IGZyb20gJ0BlbW90aW9uL3N0eWxlZCc7XHJcblxyXG5leHBvcnQgY29uc3QgSGVhZGVyV3JhcHBlcjogU3R5bGVkQ29tcG9uZW50PHt9PiA9IHN0eWxlZC5oZWFkZXJgXHJcbiAgcG9zaXRpb246IGZpeGVkO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGJveC1zaGFkb3c6IDBweCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4wOCk7XHJcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHJnYig2OCwgNzYsIDg2KSBzb2xpZDtcclxuICB6LWluZGV4OiA2Mjg7XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgV3JhcHBlciA9IHN0eWxlZChSZXNwb25zaXZlKWBcclxuICBoZWlnaHQ6IDRyZW07XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuXHJcbiAgLmxvZ28ge1xyXG4gICAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgICBsZXR0ZXItc3BhY2luZzogMC41cHg7XHJcbiAgfVxyXG5cclxuICAucmlnaHQge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgfVxyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFNwYWNlciA9IHN0eWxlZC5kaXZgXHJcbiAgaGVpZ2h0OiA0cmVtO1xyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IFVzZXJJbmZvID0gc3R5bGVkLmRpdmBcclxuICBmb250LXdlaWdodDogODAwO1xyXG4gIG1hcmdpbi1yaWdodDogMXJlbTtcclxuYDtcclxuXHJcbmV4cG9ydCBjb25zdCBQcm9maWxlSW1nID0gc3R5bGVkLmltZ2BcclxuICB3aWR0aDogMi41cmVtO1xyXG4gIGhlaWdodDogMi41cmVtO1xyXG4gIGJvcmRlci1yYWRpdXM6IDUwJSAhaW1wb3J0YW50O1xyXG4gIGJveC1zaGFkb3c6IDAgMXB4IDNweCByZ2JhKDAsIDAsIDAsIDAuMTIpLCAwIDFweCAycHggcmdiYSgwLCAwLCAwLCAwLjI0KTtcclxuICB0cmFuc2l0aW9uOiBhbGwgMC4zcyBjdWJpYy1iZXppZXIoMC4yNSwgMC44LCAwLjI1LCAxKTtcclxuXHJcbiAgJjpob3ZlciB7XHJcbiAgICBib3gtc2hhZG93OiAwIDE0cHggMjhweCByZ2JhKDAsIDAsIDAsIDAuMjUpLCAwIDEwcHggMTBweCByZ2JhKDAsIDAsIDAsIDAuMjIpO1xyXG4gIH1cclxuYDtcclxuIl19 */",
-  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
-});
-
-const currentExports = __react_refresh_utils__.getModuleExports(module.id);
-__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
-
-if (true) {
-  const isHotUpdate = !!module.hot.data;
-  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
-
-  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
-    module.hot.dispose(
-      /**
-       * A callback to performs a full refresh if React has unrecoverable errors,
-       * and also caches the to-be-disposed module.
-       * @param {*} data A hot module data object from Webpack HMR.
-       * @returns {void}
-       */
-      function hotDisposeCallback(data) {
-        // We have to mutate the data object to get data registered and cached
-        data.prevExports = currentExports;
-      }
-    );
-    module.hot.accept(
-      /**
-       * An error handler to allow self-recovering behaviours.
-       * @param {Error} error An error occurred during evaluation of a module.
-       * @returns {void}
-       */
-      function hotErrorHandler(error) {
-        if (
-          typeof __react_refresh_error_overlay__ !== 'undefined' &&
-          __react_refresh_error_overlay__
-        ) {
-          __react_refresh_error_overlay__.handleRuntimeError(error);
-        }
-
-        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
-          if (window.onHotAcceptError) {
-            window.onHotAcceptError(error.message);
-          }
-        }
-
-        __webpack_require__.c[module.id].hot.accept(hotErrorHandler);
-      }
-    );
-
-    if (isHotUpdate) {
-      if (
-        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
-        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
-      ) {
-        module.hot.invalidate();
-      } else {
-        __react_refresh_utils__.enqueueUpdate(
-          /**
-           * A function to dismiss the error overlay after performing React refresh.
-           * @returns {void}
-           */
-          function updateCallback() {
-            if (
-              typeof __react_refresh_error_overlay__ !== 'undefined' &&
-              __react_refresh_error_overlay__
-            ) {
-              __react_refresh_error_overlay__.clearRuntimeErrors();
-            }
-          }
-        );
-      }
-    }
-  } else {
-    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
-      module.hot.invalidate();
-    }
-  }
-}
-
-/***/ }),
-
-/***/ "./components/Responsive/index.tsx":
-/*!*****************************************!*\
-  !*** ./components/Responsive/index.tsx ***!
-  \*****************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled/base */ "./node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-/* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-__webpack_require__.$Refresh$.setup(module.id);
-
-
-
-function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
-
-
-
-const ResponsiveWrapper = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("div",  false ? 0 : {
-  target: "e1spaocj0",
-  label: "ResponsiveWrapper"
-})( false ? 0 : {
-  name: "107587t",
-  styles: "padding-left:1rem;padding-right:1rem;margin:0 auto;@media (max-width: 1024px){width:768px;}@media (max-width: 768px){width:100%;}",
-  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXFJlc3BvbnNpdmVcXGluZGV4LnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHb0MiLCJmaWxlIjoiQzpcXFVzZXJzXFxjb3JvY2tcXERlc2t0b3BcXE5lb1BBU1xccGFzLWNsaWVudFxcY29tcG9uZW50c1xcUmVzcG9uc2l2ZVxcaW5kZXgudHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xyXG5pbXBvcnQgUmVhY3QsIHsgUHJvcHNXaXRoQ2hpbGRyZW4gfSBmcm9tICdyZWFjdCc7XHJcblxyXG5jb25zdCBSZXNwb25zaXZlV3JhcHBlciA9IHN0eWxlZC5kaXZgXHJcbiAgcGFkZGluZy1sZWZ0OiAxcmVtO1xyXG4gIHBhZGRpbmctcmlnaHQ6IDFyZW07XHJcbiAgLy8gd2lkdGg6IDEwMjQ7XHJcbiAgbWFyZ2luOiAwIGF1dG87XHJcblxyXG4gIEBtZWRpYSAobWF4LXdpZHRoOiAxMDI0cHgpIHtcclxuICAgIHdpZHRoOiA3NjhweDtcclxuICB9XHJcbiAgQG1lZGlhIChtYXgtd2lkdGg6IDc2OHB4KSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbmA7XHJcblxyXG5jb25zdCBSZXNwb25zaXZlID0gKHsgY2hpbGRyZW4sIC4uLnJlc3QgfTogUHJvcHNXaXRoQ2hpbGRyZW48e30+KSA9PiB7XHJcbiAgcmV0dXJuIDxSZXNwb25zaXZlV3JhcHBlciB7Li4ucmVzdH0+e2NoaWxkcmVufTwvUmVzcG9uc2l2ZVdyYXBwZXI+O1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgUmVzcG9uc2l2ZTtcclxuIl19 */",
-  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
-});
-
-_c = ResponsiveWrapper;
-
-const Responsive = ({
-  children,
-  ...rest
-}) => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(ResponsiveWrapper, rest, children);
-};
-
-_c2 = Responsive;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Responsive);
-
-var _c, _c2;
-
-__webpack_require__.$Refresh$.register(_c, "ResponsiveWrapper");
-__webpack_require__.$Refresh$.register(_c2, "Responsive");
-
-const currentExports = __react_refresh_utils__.getModuleExports(module.id);
-__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
-
-if (true) {
-  const isHotUpdate = !!module.hot.data;
-  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
-
-  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
-    module.hot.dispose(
-      /**
-       * A callback to performs a full refresh if React has unrecoverable errors,
-       * and also caches the to-be-disposed module.
-       * @param {*} data A hot module data object from Webpack HMR.
-       * @returns {void}
-       */
-      function hotDisposeCallback(data) {
-        // We have to mutate the data object to get data registered and cached
-        data.prevExports = currentExports;
-      }
-    );
-    module.hot.accept(
-      /**
-       * An error handler to allow self-recovering behaviours.
-       * @param {Error} error An error occurred during evaluation of a module.
-       * @returns {void}
-       */
-      function hotErrorHandler(error) {
-        if (
-          typeof __react_refresh_error_overlay__ !== 'undefined' &&
-          __react_refresh_error_overlay__
-        ) {
-          __react_refresh_error_overlay__.handleRuntimeError(error);
-        }
-
-        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
-          if (window.onHotAcceptError) {
-            window.onHotAcceptError(error.message);
-          }
-        }
-
-        __webpack_require__.c[module.id].hot.accept(hotErrorHandler);
-      }
-    );
-
-    if (isHotUpdate) {
-      if (
-        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
-        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
-      ) {
-        module.hot.invalidate();
-      } else {
-        __react_refresh_utils__.enqueueUpdate(
-          /**
-           * A function to dismiss the error overlay after performing React refresh.
-           * @returns {void}
-           */
-          function updateCallback() {
-            if (
-              typeof __react_refresh_error_overlay__ !== 'undefined' &&
-              __react_refresh_error_overlay__
-            ) {
-              __react_refresh_error_overlay__.clearRuntimeErrors();
-            }
-          }
-        );
-      }
-    }
-  } else {
-    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
-      module.hot.invalidate();
-    }
-  }
-}
-
-/***/ }),
-
 /***/ "./components/Snb/index.tsx":
 /*!**********************************!*\
   !*** ./components/Snb/index.tsx ***!
@@ -1055,68 +1227,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-icons/ai */ "./node_modules/react-icons/ai/index.esm.js");
-/* harmony import */ var react_icons_di__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/di */ "./node_modules/react-icons/di/index.esm.js");
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
-/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/fi */ "./node_modules/react-icons/fi/index.esm.js");
-/* harmony import */ var react_icons_gi__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-icons/gi */ "./node_modules/react-icons/gi/index.esm.js");
-/* harmony import */ var react_icons_lib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-icons/lib */ "./node_modules/react-icons/lib/esm/index.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles */ "./components/Snb/styles.tsx");
+/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/ListItem */ "./node_modules/@material-ui/core/esm/ListItem/ListItem.js");
+/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "./node_modules/@material-ui/core/esm/ListItemText/ListItemText.js");
+/* harmony import */ var react_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons */ "./node_modules/react-icons/lib/esm/index.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 /* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.id);
 
+var _s = __webpack_require__.$Refresh$.signature();
 
+ //동작용
 
-
+ //icons
 
 
 
 
 
 const Snb = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_lib__WEBPACK_IMPORTED_MODULE_1__.IconContext.Provider, {
-    value: {
-      size: '2rem',
-      color: 'white'
-      /* attr: { display: 'block' } */
+  _s();
 
+  const [currentTab, setCurrentTab] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0);
+  const menuArr = [{
+    name: 'Description',
+    content: 'Description'
+  }, {
+    name: 'Editor',
+    content: 'Editor'
+  }];
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_1__.Side, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons__WEBPACK_IMPORTED_MODULE_2__.IconContext.Provider, {
+    value: {
+      color: "#ffff"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_3__.default, {
+    button: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_4__.default, {
     style: {
-      background: 'rgb(30, 34, 40)',
-      width: '4rem',
-      borderRight: '1px rgb(68, 76, 86) solid',
-      textAlign: 'center',
-      padding: '0.5rem',
-      height: 'calc(100vh - 4rem)'
+      color: "#ffff"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "Descript")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_3__.default, {
+    button: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_4__.default, {
     style: {
-      margin: '1rem 0'
+      color: "#ffff"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_di__WEBPACK_IMPORTED_MODULE_2__.DiCodeBadge, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "Editor")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_3__.default, {
+    button: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_4__.default, {
     style: {
-      margin: '1rem 0'
+      color: "#ffff"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_3__.FiUpload, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    style: {
-      margin: '1rem 0'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__.FaUnlock, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    style: {
-      margin: '1rem 0'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__.FaLock, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    style: {
-      margin: '1rem 0'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_ai__WEBPACK_IMPORTED_MODULE_5__.AiOutlineSetting, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    style: {
-      margin: '1rem 0'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_gi__WEBPACK_IMPORTED_MODULE_6__.GiExitDoor, null))));
+  }, "Setting")));
 };
+
+_s(Snb, "7u0Gkg0v2ndXEokaGVtyUM5AeKo=");
 
 _c = Snb;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Snb);
@@ -1124,6 +1290,271 @@ _c = Snb;
 var _c;
 
 __webpack_require__.$Refresh$.register(_c, "Snb");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.id);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.id].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+
+/***/ }),
+
+/***/ "./components/Snb/styles.tsx":
+/*!***********************************!*\
+  !*** ./components/Snb/styles.tsx ***!
+  \***********************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Side": () => (/* binding */ Side),
+/* harmony export */   "Menu": () => (/* binding */ Menu)
+/* harmony export */ });
+/* harmony import */ var _emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled/base */ "./node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+/* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.id);
+
+
+
+function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
+
+const Side = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("div",  false ? 0 : {
+  target: "eht22261",
+  label: "Side"
+})( false ? 0 : {
+  name: "nzm27a",
+  styles: "display:flex;border-right:1px solid #e0e0e0;flex-direction:column;align-items:center;justify-content:center;width:5%;background:#292F36;.item{font-size:1.125rem;color:#ffff;font-weight:400;letter-spacing:2px;}",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXFNuYlxcc3R5bGVzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFOEIiLCJmaWxlIjoiQzpcXFVzZXJzXFxjb3JvY2tcXERlc2t0b3BcXE5lb1BBU1xccGFzLWNsaWVudFxcY29tcG9uZW50c1xcU25iXFxzdHlsZXMudHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xyXG5cclxuZXhwb3J0IGNvbnN0IFNpZGUgPSBzdHlsZWQuZGl2YFxyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkICNlMGUwZTA7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgd2lkdGg6IDUlO1xyXG4gICAgYmFja2dyb3VuZDogIzI5MkYzNjtcclxuXHJcbiAgICAuaXRlbSB7XHJcbiAgICAgICAgZm9udC1zaXplOiAxLjEyNXJlbTtcclxuICAgICAgICBjb2xvcjogI2ZmZmY7XHJcbiAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICAgICAgICBsZXR0ZXItc3BhY2luZzogMnB4OyAgICAgICAgXHJcbiAgICB9XHJcbmA7XHJcblxyXG5leHBvcnQgY29uc3QgTWVudSA9IHN0eWxlZC5kaXZgXHJcbiAgICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gICAgd2lkdGg6IDIwMHB4O1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbmA7Il19 */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+const Menu = (0,_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__.default)("div",  false ? 0 : {
+  target: "eht22260",
+  label: "Menu"
+})( false ? 0 : {
+  name: "jp89nk",
+  styles: "margin-top:30px;width:200px;display:flex;flex-direction:column",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXFNuYlxcc3R5bGVzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFtQjhCIiwiZmlsZSI6IkM6XFxVc2Vyc1xcY29yb2NrXFxEZXNrdG9wXFxOZW9QQVNcXHBhcy1jbGllbnRcXGNvbXBvbmVudHNcXFNuYlxcc3R5bGVzLnRzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBzdHlsZWQgZnJvbSAnQGVtb3Rpb24vc3R5bGVkJztcclxuXHJcbmV4cG9ydCBjb25zdCBTaWRlID0gc3R5bGVkLmRpdmBcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCAjZTBlMGUwO1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIHdpZHRoOiA1JTtcclxuICAgIGJhY2tncm91bmQ6ICMyOTJGMzY7XHJcblxyXG4gICAgLml0ZW0ge1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMS4xMjVyZW07XHJcbiAgICAgICAgY29sb3I6ICNmZmZmO1xyXG4gICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XHJcbiAgICAgICAgbGV0dGVyLXNwYWNpbmc6IDJweDsgICAgICAgIFxyXG4gICAgfVxyXG5gO1xyXG5cclxuZXhwb3J0IGNvbnN0IE1lbnUgPSBzdHlsZWQuZGl2YFxyXG4gICAgbWFyZ2luLXRvcDogMzBweDtcclxuICAgIHdpZHRoOiAyMDBweDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG5gOyJdfQ== */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+});
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.id);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.id].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+
+/***/ }),
+
+/***/ "./hooks/useChat.ts":
+/*!**************************!*\
+  !*** ./hooks/useChat.ts ***!
+  \**************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! socket.io-client */ "./node_modules/socket.io-client/wrapper.mjs");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+/* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.id);
+
+var _s = __webpack_require__.$Refresh$.signature();
+
+
+
+const NEW_CHAT_MESSAGE_EVENT = 'message'; // Name of the event
+
+const SOCKET_SERVER_URL = 'http://localhost:4000';
+
+const useChat = roomID => {
+  _s();
+
+  const [messages, setMessages] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]); // Sent and received messages
+
+  const socketRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    // Creates a WebSocket connection
+    socketRef.current = (0,socket_io_client__WEBPACK_IMPORTED_MODULE_1__.default)(SOCKET_SERVER_URL, {
+      query: {
+        roomID
+      }
+    }); // Listens for incoming messages
+
+    socketRef.current.on(NEW_CHAT_MESSAGE_EVENT, message => {
+      const incomingMessage = { ...message,
+        ownedByCurrentUser: message.senderId === socketRef.current.id
+      };
+      setMessages(messages => [...messages, incomingMessage]);
+      console.log('ownedByCurrentUser : ', incomingMessage.ownedByCurrentUser);
+    }); // Destroys the socket reference
+    // when the connection is closed
+
+    return () => {
+      socketRef.current.disconnect();
+    };
+  }, [roomID]); // Sends a message to the server that
+  // forwards it to all users in the same room
+
+  const sendMessage = messageBody => {
+    socketRef.current.emit(NEW_CHAT_MESSAGE_EVENT, {
+      body: messageBody,
+      senderId: socketRef.current.id // 함부로 가져온 거 쓰지말자.. id 속성값이 없다.
+
+    });
+    console.log('messageBody : ', messageBody);
+  };
+
+  return {
+    messages,
+    sendMessage
+  };
+};
+
+_s(useChat, "rJUxOyV7d92WYkbiDZQ/Q3CnO+M=");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useChat);
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.id);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
@@ -1211,12 +1642,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_Chat__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @components/Chat */ "./components/Chat/index.tsx");
-/* harmony import */ var _components_Editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Editor */ "./components/Editor/index.tsx");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Header */ "./components/Header/index.tsx");
-/* harmony import */ var _components_Snb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/Snb */ "./components/Snb/index.tsx");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _components_Chat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Chat */ "./components/Chat/index.tsx");
+/* harmony import */ var _components_Editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Editor */ "./components/Editor/index.tsx");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/Header */ "./components/Header/index.tsx");
+/* harmony import */ var _components_Snb__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @components/Snb */ "./components/Snb/index.tsx");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 /* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
@@ -1228,19 +1658,15 @@ __webpack_require__.$Refresh$.setup(module.id);
 
 
 
-
 const Playground = () => {
-  if (!localStorage.getItem('user')) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement(react_router__WEBPACK_IMPORTED_MODULE_5__.Redirect, {
-      to: "/login"
-    });
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement(react__WEBPACK_IMPORTED_MODULE_4__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement("div", {
+  // if (!localStorage.getItem('user')) {
+  //   return <Redirect to="/login" />;
+  // }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_3__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     style: {
       display: 'flex'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_Snb__WEBPACK_IMPORTED_MODULE_3__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_Editor__WEBPACK_IMPORTED_MODULE_1__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_Chat__WEBPACK_IMPORTED_MODULE_0__.default, null)));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Snb__WEBPACK_IMPORTED_MODULE_4__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Editor__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Chat__WEBPACK_IMPORTED_MODULE_1__.default, null)));
 };
 
 _c = Playground;

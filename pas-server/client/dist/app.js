@@ -4843,8 +4843,10 @@ const LogIn = (0,_loadable_component__WEBPACK_IMPORTED_MODULE_0__.default)(_c = 
 _c2 = LogIn;
 const SignUp = (0,_loadable_component__WEBPACK_IMPORTED_MODULE_0__.default)(_c3 = () => Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js"), __webpack_require__.e("vendors-node_modules_axios_index_js"), __webpack_require__.e("hooks_useInputs_ts-pages_SignUp_styles_tsx-assets_logo_png"), __webpack_require__.e("pages_SignUp_index_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! @pages/SignUp */ "./pages/SignUp/index.tsx")));
 _c4 = SignUp;
-const Playground = (0,_loadable_component__WEBPACK_IMPORTED_MODULE_0__.default)(_c5 = () => Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js"), __webpack_require__.e("vendors-node_modules_codemirror_addon_comment_continuecomment_js-node_modules_codemirror_addo-e70ec5"), __webpack_require__.e("layouts_Playground_index_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! @layouts/Playground */ "./layouts/Playground/index.tsx")));
+const Playground = (0,_loadable_component__WEBPACK_IMPORTED_MODULE_0__.default)(_c5 = () => Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js"), __webpack_require__.e("vendors-node_modules_gravatar_index_js-node_modules_jwt-decode_build_jwt-decode_esm_js"), __webpack_require__.e("vendors-node_modules_material-ui_core_esm_ListItemText_ListItemText_js-node_modules_material--3573c6"), __webpack_require__.e("components_Header_index_tsx"), __webpack_require__.e("layouts_Playground_index_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! @layouts/Playground */ "./layouts/Playground/index.tsx")));
 _c6 = Playground;
+const Lobby = (0,_loadable_component__WEBPACK_IMPORTED_MODULE_0__.default)(_c7 = () => Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js"), __webpack_require__.e("vendors-node_modules_gravatar_index_js-node_modules_jwt-decode_build_jwt-decode_esm_js"), __webpack_require__.e("components_Header_index_tsx"), __webpack_require__.e("layouts_Lobby_index_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! @layouts/Lobby */ "./layouts/Lobby/index.tsx")));
+_c8 = Lobby;
 
 const App = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.Redirect, {
@@ -4859,17 +4861,17 @@ const App = () => {
     component: SignUp
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.Route, {
     path: "/playgrounds",
-    component: Playground
+    component: Lobby
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.Route, {
-    path: "/playgrounds/:playground",
+    path: "/:roomID",
     component: Playground
   }));
 };
 
-_c7 = App;
+_c9 = App;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
-var _c, _c2, _c3, _c4, _c5, _c6, _c7;
+var _c, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
 
 __webpack_require__.$Refresh$.register(_c, "LogIn$loadable");
 __webpack_require__.$Refresh$.register(_c2, "LogIn");
@@ -4877,7 +4879,9 @@ __webpack_require__.$Refresh$.register(_c3, "SignUp$loadable");
 __webpack_require__.$Refresh$.register(_c4, "SignUp");
 __webpack_require__.$Refresh$.register(_c5, "Playground$loadable");
 __webpack_require__.$Refresh$.register(_c6, "Playground");
-__webpack_require__.$Refresh$.register(_c7, "App");
+__webpack_require__.$Refresh$.register(_c7, "Lobby$loadable");
+__webpack_require__.$Refresh$.register(_c8, "Lobby");
+__webpack_require__.$Refresh$.register(_c9, "App");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.id);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
@@ -46418,7 +46422,7 @@ function combine (array, callback) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("bbe6bff360a653275efb")
+/******/ 		__webpack_require__.h = () => ("2790a57f5e760bee39de")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
