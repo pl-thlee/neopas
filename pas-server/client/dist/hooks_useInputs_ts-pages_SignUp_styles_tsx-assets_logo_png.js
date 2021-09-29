@@ -1,4 +1,3 @@
-"use strict";
 (self["webpackChunkpas_client"] = self["webpackChunkpas_client"] || []).push([["hooks_useInputs_ts-pages_SignUp_styles_tsx-assets_logo_png"],{
 
 /***/ "./hooks/useInputs.ts":
@@ -7,6 +6,7 @@
   \****************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -126,6 +126,7 @@ if (true) {
   \*********************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SignUpContainer": () => (/* binding */ SignUpContainer),
@@ -320,13 +321,9 @@ if (true) {
 /*!*************************!*\
   !*** ./assets/logo.png ***!
   \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "d11a752ae0c1463d7942cc9057b27611.png");
+module.exports = __webpack_require__.p + "assets/d11a752ae0c1463d7942cc9057b27611.png";
 
 /***/ })
 
