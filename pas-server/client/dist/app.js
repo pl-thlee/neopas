@@ -4839,9 +4839,9 @@ __webpack_require__.$Refresh$.setup(module.id);
 
 
 
-const LogIn = (0,_loadable_component__WEBPACK_IMPORTED_MODULE_0__.default)(_c = () => Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js"), __webpack_require__.e("vendors-node_modules_axios_index_js"), __webpack_require__.e("hooks_useInputs_ts-pages_SignUp_styles_tsx"), __webpack_require__.e("pages_Login_index_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! @pages/Login */ "./pages/Login/index.tsx")));
+const LogIn = (0,_loadable_component__WEBPACK_IMPORTED_MODULE_0__.default)(_c = () => Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js"), __webpack_require__.e("vendors-node_modules_axios_index_js"), __webpack_require__.e("hooks_useInputs_ts-pages_SignUp_styles_tsx-assets_logo_png"), __webpack_require__.e("pages_Login_index_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! @pages/Login */ "./pages/Login/index.tsx")));
 _c2 = LogIn;
-const SignUp = (0,_loadable_component__WEBPACK_IMPORTED_MODULE_0__.default)(_c3 = () => Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js"), __webpack_require__.e("vendors-node_modules_axios_index_js"), __webpack_require__.e("hooks_useInputs_ts-pages_SignUp_styles_tsx"), __webpack_require__.e("pages_SignUp_index_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! @pages/SignUp */ "./pages/SignUp/index.tsx")));
+const SignUp = (0,_loadable_component__WEBPACK_IMPORTED_MODULE_0__.default)(_c3 = () => Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js"), __webpack_require__.e("vendors-node_modules_axios_index_js"), __webpack_require__.e("hooks_useInputs_ts-pages_SignUp_styles_tsx-assets_logo_png"), __webpack_require__.e("pages_SignUp_index_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! @pages/SignUp */ "./pages/SignUp/index.tsx")));
 _c4 = SignUp;
 const Playground = (0,_loadable_component__WEBPACK_IMPORTED_MODULE_0__.default)(_c5 = () => Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js"), __webpack_require__.e("vendors-node_modules_codemirror_addon_comment_continuecomment_js-node_modules_codemirror_addo-a8acf9"), __webpack_require__.e("layouts_Playground_index_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! @layouts/Playground */ "./layouts/Playground/index.tsx")));
 _c6 = Playground;
@@ -46418,7 +46418,7 @@ function combine (array, callback) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("3dcc31cebe79dbac2ab5")
+/******/ 		__webpack_require__.h = () => ("65bd871723f855bc6592")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

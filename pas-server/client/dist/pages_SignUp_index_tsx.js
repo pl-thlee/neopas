@@ -31,6 +31,8 @@ var _s = __webpack_require__.$Refresh$.signature();
 
 
 
+const SplashImage = __webpack_require__(/*! @assets/logo.png */ "./assets/logo.png");
+
 const SignUp = () => {
   _s();
 
@@ -70,7 +72,7 @@ const SignUp = () => {
     });
   }, [userId, studentId, password, pscheck, email, name, phone]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_SignUp_styles__WEBPACK_IMPORTED_MODULE_1__.SignUpContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_SignUp_styles__WEBPACK_IMPORTED_MODULE_1__.SplashWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "/assets/logo.png",
+    src: SplashImage,
     alt: "splashimage"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_SignUp_styles__WEBPACK_IMPORTED_MODULE_1__.SignUpWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_SignUp_styles__WEBPACK_IMPORTED_MODULE_1__.SignUpHeader, null, "\uD68C\uC6D0\uAC00\uC785\uC744 \uC9C4\uD589\uD558\uC138\uC694."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_SignUp_styles__WEBPACK_IMPORTED_MODULE_1__.Form, {
     onSubmit: onSubmit

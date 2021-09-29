@@ -34,6 +34,9 @@ var _s = __webpack_require__.$Refresh$.signature();
 
 
 
+/** @see https://stackoverflow.com/questions/44312170/displaying-a-static-image-using-react-typescript-and-webpack */
+
+const SplashImage = __webpack_require__(/*! @assets/logo.png */ "./assets/logo.png");
 
 const LogIn = () => {
   _s();
@@ -97,7 +100,7 @@ const LogIn = () => {
   }
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_3__.LoginContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_3__.LoginWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "assets/logo.png",
+    src: SplashImage,
     alt: "splashimage",
     style: {
       marginBottom: '1rem'
