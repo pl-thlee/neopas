@@ -7,6 +7,7 @@ import { AuthModule } from './auth/auth.module';
 import * as ormconfig from '../ormconfig';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
+import { ChatModule } from 'chat/chat.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { join } from 'path';
     }),
     TypeOrmModule.forRoot(ormconfig),
     AuthModule,
+    ChatModule,
   ],
 })
 export class AppModule implements NestModule {
