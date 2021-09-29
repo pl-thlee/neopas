@@ -4,7 +4,7 @@ import { User } from 'src/auth/entities/user.entity';
 const config: TypeOrmModuleOptions = {
   url: process.env.CLEARDB_DATABASE_URL,
   type: 'mysql',
-  host: 'localhost',
+  host: 'https://neopas-server.herokuapp.com',
   port: 3306,
   username: process.env.DB_USER,
   password: process.env.DB_PASS,

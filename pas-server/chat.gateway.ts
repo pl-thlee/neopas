@@ -10,7 +10,7 @@ import { Server, Socket } from 'socket.io';
 
 @WebSocketGateway({
   cors: {
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000', 'https://neopas-server.herokuapp.com/'],
     // methods: ['GET', 'POST'],
     credential: true,
   },
