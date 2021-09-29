@@ -180,8 +180,8 @@ const ChatHeader = ({
     roomID
   } = match.params; // Gets roomId from URL
 
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    fetch(`https://neopas-server.herokuapp.com/${roomID}`);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {// fetch(`http://localhost:3000/playgrounds/${roomID}`);
+    // fetch(`https://neopas-server.herokuapp.com/${roomID}`);
   }, [roomID]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_1__.ChatHeaderWrapper, null, roomID);
 };
@@ -1507,6 +1507,7 @@ var _s = __webpack_require__.$Refresh$.signature();
 const NEW_CHAT_MESSAGE_EVENT = 'message'; // Name of the event
 
 const SOCKET_SERVER_URL = 'http://localhost:4000';
+const HEROKU_SERVER_URL = 'https://neopas-server.herokuapp.com';
 
 const useChat = roomID => {
   _s();
@@ -1516,7 +1517,7 @@ const useChat = roomID => {
   const socketRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     // Creates a WebSocket connection
-    socketRef.current = (0,socket_io_client__WEBPACK_IMPORTED_MODULE_1__.default)(SOCKET_SERVER_URL, {
+    socketRef.current = (0,socket_io_client__WEBPACK_IMPORTED_MODULE_1__.default)(HEROKU_SERVER_URL, {
       query: {
         roomID
       }
