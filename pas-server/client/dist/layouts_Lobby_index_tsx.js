@@ -292,7 +292,7 @@ __webpack_require__.$Refresh$.setup(module.id);
 
 
 
-const PlaygroundUrl = () => {
+const Lobby = () => {
   // JWT 토큰이 있는지 확인하고
   // if (!localStorage.getItem('user')) {
   //   return <Redirect to="/login" />;
@@ -305,12 +305,12 @@ const PlaygroundUrl = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_components_Url__WEBPACK_IMPORTED_MODULE_0__.default, null)));
 };
 
-_c = PlaygroundUrl;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PlaygroundUrl);
+_c = Lobby;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Lobby);
 
 var _c;
 
-__webpack_require__.$Refresh$.register(_c, "PlaygroundUrl");
+__webpack_require__.$Refresh$.register(_c, "Lobby");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.id);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);

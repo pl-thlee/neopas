@@ -181,7 +181,7 @@ const ChatHeader = ({
   } = match.params; // Gets roomId from URL
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    fetch(`http://localhost:3000/playgrounds/${roomID}`);
+    fetch(`https://neopas-server.herokuapp.com/${roomID}`);
   }, [roomID]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_styles__WEBPACK_IMPORTED_MODULE_1__.ChatHeaderWrapper, null, roomID);
 };
