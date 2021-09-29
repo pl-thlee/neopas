@@ -459,19 +459,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_codemirror2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-codemirror2 */ "./node_modules/react-codemirror2/index.js");
 /* harmony import */ var _editorConfig__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./editorConfig */ "./components/Editor/editorConfig.ts");
-/* harmony import */ var yjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! yjs */ "./node_modules/yjs/dist/yjs.mjs");
-/* harmony import */ var y_webrtc__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! y-webrtc */ "./node_modules/y-webrtc/src/y-webrtc.js");
-/* harmony import */ var y_codemirror__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! y-codemirror */ "./node_modules/y-codemirror/src/y-codemirror.js");
+/* harmony import */ var yjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! yjs */ "./node_modules/yjs/dist/yjs.mjs");
+/* harmony import */ var y_webrtc__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! y-webrtc */ "./node_modules/y-webrtc/src/y-webrtc.js");
+/* harmony import */ var y_codemirror__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! y-codemirror */ "./node_modules/y-codemirror/src/y-codemirror.js");
 /* harmony import */ var _editorAddons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editorAddons */ "./components/Editor/editorAddons.ts");
 /* harmony import */ var _remote_caret_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./remote-caret.css */ "./components/Editor/remote-caret.css");
 /* harmony import */ var randomcolor__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! randomcolor */ "./node_modules/randomcolor/randomColor.js");
 /* harmony import */ var randomcolor__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(randomcolor__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! jwt-decode */ "./node_modules/jwt-decode/build/jwt-decode.esm.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 /* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/overlay/index.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.id);
 
 var _s = __webpack_require__.$Refresh$.signature();
+
 
 
 
@@ -495,28 +497,30 @@ const Editor = () => {
     editor.setSize('70vw', 'calc(100vh - 4rem)');
   }
 
+  const token = localStorage.getItem('user');
+  const currentUserId = (0,jwt_decode__WEBPACK_IMPORTED_MODULE_6__.default)(token).userId;
   const [code, setCode] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''); // const codemirrorRef = useRef(doc?.getEditor());
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     if (editor) {
       // Create a Yjs document that holds shared data
-      const ydoc = new yjs__WEBPACK_IMPORTED_MODULE_6__.Doc();
+      const ydoc = new yjs__WEBPACK_IMPORTED_MODULE_7__.Doc();
       let provider = null;
 
       try {
         // Syncs the ydoc throught WebRTC connection
-        provider = new y_webrtc__WEBPACK_IMPORTED_MODULE_7__.WebrtcProvider('pas-room', ydoc); // Define a shared text type on the document
+        provider = new y_webrtc__WEBPACK_IMPORTED_MODULE_8__.WebrtcProvider('pas-room', ydoc); // Define a shared text type on the document
 
         const yText = ydoc.getText('codemirror'); // UndoManager used for stacking the undo and redo operation for yjs
 
-        const yUndoManager = new yjs__WEBPACK_IMPORTED_MODULE_6__.UndoManager(yText);
+        const yUndoManager = new yjs__WEBPACK_IMPORTED_MODULE_7__.UndoManager(yText);
         const awareness = provider.awareness;
         const color = randomcolor__WEBPACK_IMPORTED_MODULE_5___default()();
         awareness.setLocalStateField('user', {
-          name: '이도훈',
+          name: currentUserId,
           color: color
         });
-        new y_codemirror__WEBPACK_IMPORTED_MODULE_8__.CodemirrorBinding(yText, editor, awareness, {
+        new y_codemirror__WEBPACK_IMPORTED_MODULE_9__.CodemirrorBinding(yText, editor, awareness, {
           yUndoManager
         });
       } catch (err) {
