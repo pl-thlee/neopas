@@ -94,7 +94,7 @@ const config: Configuration = {
     publicPath: '/dist/',
     proxy: {
       '/api/': {
-        target: 'https://neopas-server.herokuapp.com',
+        target: 'http://localhost:4000',
         changeOrigin: true,
       },
     },
