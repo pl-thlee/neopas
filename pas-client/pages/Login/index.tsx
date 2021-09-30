@@ -6,6 +6,9 @@ import { LoginContainer, LoginWrapper } from './styles';
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import { useMutation } from 'react-query';
 
+/** @see https://stackoverflow.com/questions/44312170/displaying-a-static-image-using-react-typescript-and-webpack */
+const SplashImage = require('@assets/logo.png');
+
 const LogIn = () => {
   const [state, onChange] = useInputs({ userid: '', password: '' });
   const { userid: userId, password } = state;
@@ -59,7 +62,7 @@ const LogIn = () => {
   return (
     <LoginContainer>
       <LoginWrapper>
-        <img src="assets/logo.png" alt="splashimage" style={{ marginBottom: '1rem' }} />
+        <img src={SplashImage} alt="splashimage" style={{ marginBottom: '1rem' }} />
 
         <Form onSubmit={onSubmit}>
           <Label id="label-id">

@@ -7,6 +7,13 @@ import { CodemirrorBinding } from 'y-codemirror';
 import './editorAddons';
 import './remote-caret.css';
 import randomColor from 'randomcolor';
+import jwtDecode from 'jwt-decode';
+
+export interface IToken {
+  userId: string;
+  iat: number;
+  exp: number;
+}
 
 const Editor = () => {
   const [doc, setDoc] = useState<CodeMirror.Doc>();
@@ -16,6 +23,9 @@ const Editor = () => {
     // editor.refresh();
     editor.setSize('70vw', 'calc(100vh - 4rem)');
   }
+
+  const token = localStorage.getItem('user');
+  const currentUserId = jwtDecode<IToken>(token!).userId;
 
   const [code, setCode] = useState('');
   // const codemirrorRef = useRef(doc?.getEditor());
@@ -39,7 +49,7 @@ const Editor = () => {
         const color = randomColor();
 
         awareness.setLocalStateField('user', {
-          name: '이도훈',
+          name: currentUserId,
           color: color,
         });
 

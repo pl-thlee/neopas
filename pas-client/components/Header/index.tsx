@@ -1,18 +1,26 @@
 import React from 'react';
-import { HeaderWrapper, Spacer, Wrapper } from './styles';
+import { HeaderWrapper, ProfileImg, Spacer, Wrapper } from './styles';
+import gravatar from 'gravatar';
+import jwtDecode from 'jwt-decode';
+import { IToken } from '@components/Editor';
 
 // interface Props {
 //   user: IUser;
 // }
 
 const Header = () => {
+  const token = localStorage.getItem('user');
+  const currentUserId = jwtDecode<IToken>(token!).userId;
+
   return (
     <>
       <HeaderWrapper>
         <Wrapper>
-          <div className="logo">Programming Assistant System</div>
+          <div className="logo">NeoPAS (Programming Assistant System)</div>
           <div className="right">
-            <button>로그인</button>
+            <ProfileImg
+              src={gravatar.url(currentUserId, { size: '28px', default: 'retro' })}
+            ></ProfileImg>
           </div>
         </Wrapper>
       </HeaderWrapper>

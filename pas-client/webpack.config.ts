@@ -23,6 +23,7 @@ const config: Configuration = {
       '@layouts': path.resolve(__dirname, 'layouts'),
       '@pages': path.resolve(__dirname, 'pages'),
       '@libs': path.resolve(__dirname, 'libs'),
+      '@assets': path.resolve(__dirname, 'assets'),
     },
   },
   entry: {
@@ -31,7 +32,7 @@ const config: Configuration = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         loader: 'babel-loader',
         options: {
           presets: [
@@ -58,7 +59,19 @@ const config: Configuration = {
       },
       {
         test: /\.css?$/,
+        // Run multiple loaders simultaneously
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(ico|png|jpg|jpeg|gif|svg|otf|woff|woff2|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader',
+        options: {
+          name: '[hash].[ext]',
+          limit: 10000,
+          /** @see https://github.com/vuejs/vue-loader/issues/1612 */
+          esModule: false,
+          outputPath: 'assets',
+        },
       },
     ],
   },

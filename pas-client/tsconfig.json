@@ -17,6 +17,7 @@
       "@layouts/*": ["layouts/*"],
       "@pages/*": ["pages/*"],
       "@libs/*": ["libs/*"],
+      "@assets/*": ["assets/*"],
     }
   }
 }

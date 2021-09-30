@@ -15,6 +15,8 @@ import { Link, useHistory } from 'react-router-dom';
 import useInputs from '@hooks/useInputs';
 import axios, { AxiosResponse } from 'axios';
 
+const SplashImage = require('@assets/logo.png');
+
 const SignUp = () => {
   const [state, onChange] = useInputs({
     userid: '',
@@ -47,7 +49,7 @@ const SignUp = () => {
   return (
     <SignUpContainer>
       <SplashWrapper>
-        <img src="/assets/logo.png" alt="splashimage" />
+        <img src={SplashImage} alt="splashimage" />
       </SplashWrapper>
 
       <SignUpWrapper>
