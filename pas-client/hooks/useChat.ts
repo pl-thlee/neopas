@@ -36,7 +36,7 @@ const useChat = (roomID: string) => {
         ownedByCurrentUser: message.senderId === socketRef.current.id,
       };
       setMessages((messages) => [...messages, incomingMessage]);
-      console.log('ownedByCurrentUser : ', incomingMessage.ownedByCurrentUser);
+      //console.log('ownedByCurrentUser : ', incomingMessage.ownedByCurrentUser);
     });
 
     // Destroys the socket reference
@@ -52,7 +52,6 @@ const useChat = (roomID: string) => {
     socketRef.current.emit(NEW_CHAT_MESSAGE_EVENT, {
       body: messageBody,
       senderId: socketRef.current.id,
-      // 함부로 가져온 거 쓰지말자.. id 속성값이 없다.
     });
     // console.log('messageBody : ', messageBody);
   };

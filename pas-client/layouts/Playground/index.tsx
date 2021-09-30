@@ -1,14 +1,14 @@
+import React from 'react';
 import Chat from '@components/Chat';
 import Editor from '@components/Editor';
 import Header from '@components/Header';
 import Nav from '@components/Snb';
-import React from 'react';
 import { Redirect } from 'react-router';
 
 const Playground = () => {
-  if (!localStorage.getItem('user')) {
-    return <Redirect to="/login" />;
-  }
+  // if (!localStorage.getItem('user')) {
+  //   return <Redirect to="/login" />;
+  // }
 
   return (
     <>

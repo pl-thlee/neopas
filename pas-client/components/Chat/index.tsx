@@ -1,13 +1,15 @@
-import React, { KeyboardEvent, useCallback, useState, useEffect } from 'react';
+import React, { KeyboardEvent, useCallback, useState } from 'react';
 import useChat from '@hooks/useChat';
 import ChatHeader from '@components/Chat/ChatHeader/Index';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
-//input import
+
+// input import
 import { BiSend } from 'react-icons/bi';
 import { GrEmoji } from 'react-icons/gr';
 import { IconContext } from 'react-icons/lib';
 import { ChatArea, ChatToolbar, MessageBox } from './styles';
-//feed import
+
+// feed import
 import {
   MessagesContainer,
   MessagesList,
@@ -44,7 +46,7 @@ const Chat: React.SFC<RouteComponentProps<MatchParams>> = ({ match }) => {
       if (e.key === 'Enter') {
         e.preventDefault();
         setNewMessage('');
-        console.log('handleSendMessage', newMessage);
+        // console.log('handleSendMessage', newMessage);
         sendMessage(newMessage);
       }
     },
@@ -61,7 +63,7 @@ const Chat: React.SFC<RouteComponentProps<MatchParams>> = ({ match }) => {
       }}
     >
       <ChatHeader />
-      <div id="#chatFeed" style={{ display: 'flex', flex: 0.8, padding: '1rem' }}>
+      <div id="#chatFeed" style={{ display: 'flex', flex: 0.8, padding: '1rem', height: '100px' }}>
         <MessagesContainer>
           <MessagesList>
             {messages.map((message, i: number) => (
@@ -69,7 +71,7 @@ const Chat: React.SFC<RouteComponentProps<MatchParams>> = ({ match }) => {
                 {message.ownedByCurrentUser ? (
                   <MyMessage>Me : {message.body}</MyMessage>
                 ) : (
-                  <ReceivedMessage>You : {message.body}</ReceivedMessage>
+                  <ReceivedMessage>Stranger : {message.body}</ReceivedMessage>
                 )}
                 {/* {message.body} */}
               </MessagesItem>

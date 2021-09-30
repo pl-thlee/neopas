@@ -12,10 +12,12 @@ export const HeaderWrapper: StyledComponent<{}> = styled.header`
 export const Wrapper = styled(Responsive)`
   height: 4rem;
   display: flex;
+  background: #292F36;
   align-items: center;
   justify-content: space-between;
 
   .logo {
+    color: white;
     font-size: 1.5rem;
     letter-spacing: 0.5px;
   }
