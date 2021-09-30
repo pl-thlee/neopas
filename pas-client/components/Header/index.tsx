@@ -3,7 +3,6 @@ import { HeaderWrapper, ProfileImg, Spacer, Wrapper } from './styles';
 import gravatar from 'gravatar';
 import jwtDecode from 'jwt-decode';
 import { IToken } from '@components/Editor';
-import { Redirect } from 'react-router';
 
 // interface Props {
 //   user: IUser;

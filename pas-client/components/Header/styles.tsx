@@ -3,13 +3,14 @@ import styled, { StyledComponent } from '@emotion/styled';
 
 export const HeaderWrapper: StyledComponent<{}> = styled.header`
   position: fixed;
-  width: 100%;
+  width: 100vw;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
   border-bottom: 1px rgb(68, 76, 86) solid;
   z-index: 628;
 `;
 
 export const Wrapper = styled(Responsive)`
+  width: inherit;
   height: 4rem;
   display: flex;
   background: #292F36;
@@ -38,6 +39,8 @@ export const UserInfo = styled.div`
 `;
 
 export const ProfileImg = styled.img`
+  display: block;
+  margin: 0 auto;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50% !important;

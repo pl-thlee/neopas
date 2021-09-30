@@ -23,13 +23,13 @@ const Url = () => {
     >
       <Wrap>
         <EnterRoomBtn>
-          <input type="text" placeholder="학번입력" value={roomID} onChange={handleRoomNameChange} />
+          <input type="text" placeholder="Playground 이름 설정" value={roomID} onChange={handleRoomNameChange} />
         </EnterRoomBtn>
 
         {/* <JoinRoom to={'/${roomID}'}>Join Room</JoinRoom> */}
         <TextInputField>
-          <Link to={`/${roomID}`}>
-            <Text>Join room</Text>
+          <Link to={`/${roomID}`} style={{ textDecoration: 'none' }}>
+            <Text>Playground 참가</Text>
           </Link>
         </TextInputField>
       </Wrap>

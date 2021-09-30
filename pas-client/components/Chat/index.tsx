@@ -17,6 +17,10 @@ import {
   MyMessage,
   ReceivedMessage,
 } from '@components/Chat/ChatFeed/styles';
+import gravatar from 'gravatar';
+import jwtDecode from 'jwt-decode';
+import { IToken } from '@components/Editor';
+import { ProfileImg } from '@components/Header/styles';
 
 interface MatchParams {
   roomID: string;
@@ -30,8 +34,10 @@ interface messageItem {
 const Chat: React.SFC<RouteComponentProps<MatchParams>> = ({ match }) => {
   const { roomID } = match.params; // Gets roomId from URL
   const { messages, sendMessage } = useChat(roomID);
-
   const [newMessage, setNewMessage] = useState(''); // Message to be sent
+
+  const token = localStorage.getItem('user');
+  const currentUserId = jwtDecode<IToken>(token!).userId;
 
   const handleNewMessageChange = useCallback(
     (e: any) => {
@@ -60,18 +66,25 @@ const Chat: React.SFC<RouteComponentProps<MatchParams>> = ({ match }) => {
         flexDirection: 'column',
         flex: '1',
         height: 'calc(100vh - 4rem)',
+        borderLeft: '1px rgb(68, 76, 86) solid',
       }}
     >
       <ChatHeader />
-      <div id="#chatFeed" style={{ display: 'flex', flex: 0.8, padding: '1rem', height: '100px' }}>
+      <div id="#chatFeed" style={{ display: 'flex', flex: 0.8, padding: '0.5rem', height: '100px' }}>
         <MessagesContainer>
           <MessagesList>
             {messages.map((message, i: number) => (
               <MessagesItem key={i}>
                 {message.ownedByCurrentUser ? (
-                  <MyMessage>Me : {message.body}</MyMessage>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <MyMessage>{message.body}</MyMessage>
+                    <div>
+                      <h6 style={{ margin: '0', paddingBottom: '0.5rem' }}>{currentUserId}</h6>
+                      <ProfileImg src={gravatar.url(currentUserId, { size: '12px', default: 'retro' })} />
+                    </div>
+                  </div>
                 ) : (
-                  <ReceivedMessage>Stranger : {message.body}</ReceivedMessage>
+                  <ReceivedMessage>{message.body}</ReceivedMessage>
                 )}
                 {/* {message.body} */}
               </MessagesItem>

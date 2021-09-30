@@ -10,7 +10,9 @@ const reset = css`
   body {
     margin: 0 !important;
     padding: 0 !important;
-    width: 100% !important;
+    min-width: 768px;
+    width: auto !important;
+    width: 100%;
     height: 100% !important;
     /* overflow: initial !important; */
     font-size: 15px;
