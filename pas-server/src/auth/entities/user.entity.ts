@@ -1,6 +1,12 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsEmail, IsInt, IsNotEmpty, IsString, Matches } from 'class-validator';
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  ManyToMany,
+  OneToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
 
 @Entity('User', { schema: 'pas' })
 export class User {
@@ -69,4 +75,16 @@ export class User {
 
   @Column('datetime', { name: 'deleted_at', nullable: true })
   deletedAt: Date;
+
+  // @ManyToMany(() => RoomEntity, (room) => room.users)
+  // rooms: RoomEntity[];
+
+  // @OneToMany(() => ConnectedUserEntity, (connection) => connection.user)
+  // connections: ConnectedUserEntity[];
+
+  // @OneToMany(() => JoinedRoomEntity, (joinedRoom) => joinedRoom.room)
+  // joinedRooms: JoinedRoomEntity[];
+
+  // @OneToMany(() => MessageEntity, (message) => message.user)
+  // messages: MessageEntity[];
 }
