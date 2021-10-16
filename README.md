@@ -7,6 +7,8 @@
 ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=flat&logo=nestjs&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=Swagger&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat&logo=mysql&logoColor=white)
+
+![npm](https://img.shields.io/badge/npm-v6.14.13-blue?logo=npm)
 ![Heroku Deployed](https://heroku-badge.herokuapp.com/?app=neopas-server&style=flat&svg=1)
 
 ## Contributors
